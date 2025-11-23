@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Added for consistent sizing */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Added for better typography */
+}
+
+h1 {
+    background-color: yellow;
+    color: black; /* Improved text contrast */
+    height: 60px;
+    line-height: 60px; /* Vertically centers text in the header */
+    text-align: center;
+    font-size: 2rem; /* Slightly larger font size for better visibility */
+}
+
+.content {
+    background-color: grey;
+    min-height: 400px; /* Ensures content scales properly */
+    padding: 1rem; /* Adds spacing inside the content area */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centers the content */
+}
+
+.choice {
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff; /* Added background for better visibility */
+    transition: all 0.3s ease; /* Smooth hover effect */
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%; /* Ensures consistent circular images */
+    transition: transform 0.3s ease; /* Added smooth zoom effect on hover */
+}
+
+.Choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem; /* Ensures even spacing between choices */
+    flex-wrap: wrap; /* Ensures responsiveness */
+    margin-top: 1rem;
+}
+
+.Score-board {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 2rem;
+    margin-top: 1rem; /* Adds spacing */
+}
+
+.msg-Container {
+    display: flex; /* Added for centering */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+       margin-top: 2rem; /* Added for better spacing */
+}
+
+#Play {
+    background-color: rgb(15, 45, 99);
+    margin-top: 10px;
+    color: white; /* Ensures button text is visible */
+    padding: 0.6rem 1.2rem; /* Improves button shape */
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    border: none; /* Removes default button border */
+    cursor: pointer;
+    transition: background-color 0.2s ease; /* Smooth color change on hover */
+}
+
+#Play:hover {
+    background-color: rgb(24, 51, 102); /* Slightly darker shade on hover */
+}
+
+.choice:hover {
+    opacity: 0.8; /* Slightly reduce opacity for a subtle effect */
+    cursor: pointer;
+    transform: scale(1.1); /* Adds zoom effect on hover */
+}
